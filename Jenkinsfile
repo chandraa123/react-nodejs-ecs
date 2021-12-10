@@ -2,7 +2,7 @@ pipeline {
     agent any
       
       tools {
-          nodejs "node"
+          nodejs "default"
       }
     environment { 
         CI = 'true'
