@@ -7,6 +7,12 @@ pipeline {
     environment { 
         CI = 'true'
     }
+      stages {
+        stage('init') {
+            steps {
+                sh 'npm init'
+            }
+        }         
     stages {
         stage('Build') {
             steps {
