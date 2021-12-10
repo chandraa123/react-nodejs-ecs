@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:chandra111/react-node-image' 
+            image 'node:react-node-image' 
             args '-p 3000:3000' 
         }
     }
